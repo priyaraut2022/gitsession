@@ -1,0 +1,15 @@
+import os
+import pandas as pd
+os.chdir('..')
+dir = [d for d in os.listdir(os.getcwd()) if d.startswith('ML')][-1]
+os.chdir(dir)
+file  = [file for file in os.listdir(os.getcwd()) if file.startswith('temp')][0]
+df = pd.read_csv(file)
+print(df)
+
+
+https://learn.microsoft.com/en-us/certifications/exams/98-381
+
+Live classes practice coding questions asked on Google, Facebook, Microsoft, Amazon, Flipkart, Adobe etc.
+
+https://github.com/priyaraut2022/Python34#readme
